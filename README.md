@@ -5,7 +5,7 @@ In this project, you will pick a country. You may want to pick a relatively smal
 
 a)	Use SEALS to generate LULC maps for your country for 2030, 2035 and 2040. Do this for at least two different SSPs. 
 ### Country of choice: Taiwan (ISO code: TWN) - choose a small country to make analysis faster
-### SSPs choice: The SSPs are framework that are used to develop new socio-economic scenarios to be sued in global climate change studies. Basically, there are five different SSPs (1-5) which narrate different socio-economic challenges to mitigation and adoption. For further reading, please refer Popp et al. (2016).
+### SSPs choice: The SSPs are framework that are used to develop new socio-economic scenarios to be sued in global climate change studies. Basically, there are five different SSPs (1-5) which narrate different socio-economic challenges to mitigation and adoption. For further reading, please refer [Popp et al. (2016)](https://www.sciencedirect.com/science/article/pii/S0959378016303399).
 For this analysis, I have choosen SSP1 and SSP5 -  where SSP1 describes a future pathway with comparatively low challenges for adaptation and mitigation but SSP5, on the other hand, represents high challenges to mitigation combined with low challenges to adaptation. Basically, under SPP1 we will be seeing strong regulation to avaoid environmental tradeoffs and in case of SSP5 we will see medium regulations. 
 
 ### Steps to make these changes on the pre-installed earth economy devstack workspace (to learn more about these workspace visit Justin Polasky lab).
@@ -55,7 +55,10 @@ d)	Write a narrative description of how the different scenarios differ in terms 
 ### Component 2: 
 
 a)	Use the maps you generated to assess run ecosystem service assessments for each scenario. Specifically, run:
+
 a.	Carbon Storage
+
+Run the "Carbon Storage and Sequestration" model
 [Carbon storage outputs.pdf](https://github.com/prayash106/APEC_8601/files/15227545/Carbon.storage.outputs.pdf)
 
 b.	Water Yield
