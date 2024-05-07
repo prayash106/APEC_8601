@@ -35,7 +35,7 @@ My output are depicted below starting from the baseline (BAU) scenarion then und
 
 c.)	Add a new “policy” layer that prevents/encourages certain types of land-use change in certain areas. For instance, you could modify the calibration parameters file to decrease the likelihood that agricultural expansion happens on steep slopes.
 
-This step is also fairly simple as all it involves is redefining the scenarios just like we did above. In this case, we navigate to defualt_inputs_.csv under seals of our base data. There we alter the policy under consideration by changing the inputs in the defualt_global_coefficients_csv. In this example, I try a new policy in Taiwan where we do not allow changes in cropland. These can be done by changing the calibration parameters to 0.
+Just like above, now we redefine the global coefficients based on what policy we choose and the  run the model. We navigate to defualt_inputs_csv under seals of our base data. There we alter the policy under consideration by changing the inputs in the defualt_global_coefficients_csv. In this example, I try a new policy in Taiwan where we do not allow changes in cropland by changing the calibration parameters to 0.
 
 The LULC ouput that we get from this are depicted below - just like above starting from BAU model to different SSP scenarions for all years:
 
@@ -54,6 +54,8 @@ The LULC ouput that we get from this are depicted below - just like above starti
 ![lulc_esa_seals7_ssp5_rcp85_luh2-message_bau_2040](https://github.com/prayash106/APEC_8601/assets/145133689/0014a27d-9c56-4292-aa81-d6463b2045c3)
 
 d)	Write a narrative description of how the different scenarios differ in terms of what classes expand/contract and where.
+
+Adhering to our policy definition, we see no expansion into croplands after implementing the policy change. For both cases of SSP and all years our original cropland area remains unchanged which is to be expected based on how we defined our policy intervention. Comparing between SSP1 and SSP5, we do see some changes in other classes as compared to business-as-usual scenario. In case of SSP1, we see rapid expansion of croplands, other natural lands, and urban areas into forest areas – with majority of increase in case of croplands. While on the other hand, we see similar pattern of increase in case of SSP5 but at a comparatively gradual and less aggressive rate.
 
 ### Component 2: 
 
