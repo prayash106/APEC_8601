@@ -105,7 +105,7 @@ The inputs used to run this model are:
 - Watersheds - extract watershed map for youe respective area of interest.
 - Biophysical table
 
-A thing to note here is ti be careful for aligning each of these inputs in same projection. In my case, I re-projected each of them into World_Robinson before feeding them to InVest.
+A thing to note here is to be careful for aligning each of these inputs in same projection. In my case, I re-projected each of them into World_Robinson before feeding them to InVest.
 
 The ouputs generated from this model are:
  - watershed_results_ndr - vector containing aggregrated nutrient model results per wateshed
@@ -114,12 +114,12 @@ The ouputs generated from this model are:
  - n_subsurface_export
  - n_total_export
 
-The outputs from my run have been attached below for each year and SSPs. The attached file contains only watershed_results_ndr but othe results can be provided if needed.
+The outputs from my run have been attached below for each year and SSPs. 
 [Water purification:NDR.pdf](https://github.com/prayash106/APEC_8601/files/15240361/Water.purification.NDR.pdf)
 
 d. Water Yield
 
-Run the "Annual Water Yield" Invest model. Detailed information about the inputs and outputs can be found in the [user guide] (http://releases.naturalcapitalproject.org/invest-userguide/latest/reservoirhydropowerproduction.html). 
+Run the "Annual Water Yield" Invest model. Detailed information about the inputs and outputs can be found in the [user guide](http://releases.naturalcapitalproject.org/invest-userguide/latest/reservoirhydropowerproduction.html). 
 
 The inputs used to run this model are:
 - Precipitation - use the same annual precipitation file from NDR.
@@ -132,15 +132,28 @@ The inputs used to run this model are:
 
 e. Sediment retention
 
-Run the "Sediment Delivery Ratio" Invest model. Detailed information about the inputs and outputs can be found in the [user guide] (http://releases.naturalcapitalproject.org/invest-userguide/latest/en/sdr.html).
+Run the "Sediment Delivery Ratio" Invest model. Detailed information about the inputs and outputs can be found in the [user guide](http://releases.naturalcapitalproject.org/invest-userguide/latest/en/sdr.html).
 
 The inputs used to run this model are:
-- Digital elevation model
-- LULC
+- Digital elevation model - which I extracted from [ASTER](https://asterweb.jpl.nasa.gov/gdem.asp).
+- LULC - which we have derived from SEALS.
 - Biophysical table
-- Watersheds
-- Erosivity
-- Soil erodibility
+- Watersheds - extract watershed map for youe respective area of interest.
+- Erosivity - which I extracted from [ESDAC](https://esdac.jrc.ec.europa.eu/content/global-soil-erosion). 
+- Soil erodibility - which I extrcated from [ESDAC](https://esdac.jrc.ec.europa.eu/content/global-soil-erodibility). 
+
+Just like above, we have to make sure the proejections are aligned before importing them to InVest.
+
+The ouputs generated from this model are:
+ - watershed_results_sdr - vector containing biophysical values per wateshed
+ - sed_export
+ - usle_tot
+ - avoid_exp
+ - avoid_eros
+ - sed_dep
+   
+The outputs from my run have been attached below for each year and SSPs. 
+[Sediment delivery ratio outputs.pdf](https://github.com/prayash106/APEC_8601/files/15241014/Sediment.delivery.ratio.outputs.pdf)
 
 
 c)	Write a narrative description of how the different scenarios differ in terms of which ecosystem services see localized increases/decreases.
