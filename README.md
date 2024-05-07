@@ -12,12 +12,13 @@ For this analysis, I have choosen SSP1 and SSP5 -  where SSP1 describes a future
 
 Steps to make these changes on the pre-installed earth economy devstack workspace (to learn more about these workspace visit [Justin Polasky lab](https://johnsonpolaskylab.umn.edu))
 - Navigate to scenario_definations.csv files and change the respective labels based on your choice of country and SSP. AOI was chnaged to "TWN". Years was changed to 2030/35/40. Coarse projections input for respective SSP/RCP definations were downloaded from "Land Use Harmonization data" and defined in correct path.
+- Run the test_standard.py python file in debug mode.
   
 b)	Plot these maps using QGIS or whatever plotting method you like.  
 
 After running the test_standard.py python file with the changes made above, the respective LULC maps can be viewed in the visualization folder under seals of your workspace. 
 
-My output are depicted below starting from the baseline (BAU) scenarion then under the different SSP scenarios for each year.
+My output are depicted below starting from the baseline (BAU) scenario then under the different SSP scenarios for each year.
 
 ![lulc_esa_seals7_luh2-message_2017](https://github.com/prayash106/APEC_8601/assets/145133689/9005b66e-9383-44f3-8e79-53fca5f1ae4b)
 
@@ -35,7 +36,7 @@ My output are depicted below starting from the baseline (BAU) scenarion then und
 
 c.)	Add a new “policy” layer that prevents/encourages certain types of land-use change in certain areas. For instance, you could modify the calibration parameters file to decrease the likelihood that agricultural expansion happens on steep slopes.
 
-Just like above, now we redefine the global coefficients based on what policy we choose and the  run the model. We navigate to defualt_inputs_csv under seals of our base data. There we alter the policy under consideration by changing the inputs in the defualt_global_coefficients_csv. In this example, I try a new policy in Taiwan where we do not allow changes in cropland by changing the calibration parameters to 0.
+Just like above, now we redefine the global coefficients based on what policy we choose and then run the model. We navigate to "defualt_inputs_csv" under SEALS of our base data. There we alter the policy under consideration by changing the inputs in the "defualt_global_coefficients_csv". In this example, I try a new policy in Taiwan where we do not allow changes in cropland by changing the calibration parameters to 0.
 
 The LULC ouput that we get from this are depicted below - just like above starting from BAU model to different SSP scenarions for all years:
 
@@ -57,7 +58,7 @@ d)	Write a narrative description of how the different scenarios differ in terms 
 
 Crafting a narrative description of how the scenarios differ in terms of land use changes is essential. Highlighting which classes expand or contract and where these changes occur will provide valuable insights into the potential impacts of different policy decisions and socio-economic pathways on land use patterns.
 
-Adhering to our policy definition, we see no expansion into croplands after implementing the policy change. For both cases of SSP and all years our original cropland area remains unchanged which is to be expected based on how we defined our policy intervention. Comparing between SSP1 and SSP5, we do see some changes in other classes as compared to business-as-usual scenario. In case of SSP1, we see rapid expansion of croplands, other natural lands, and urban areas into forest areas – with majority of increase in case of croplands. While on the other hand, we see similar pattern of increase in case of SSP5 but at a comparatively gradual and less aggressive rate.
+Adhering to our policy definition, we see no expansion into croplands after implementing the policy change. For both cases of SSP and all years our original cropland area remains unchanged which is to be expected. Comparing between SSP1 and SSP5, we do see some changes in other classes as compared to business-as-usual scenario. In case of SSP1, we see rapid expansion of croplands, other natural lands, and urban areas into forest areas – with majority of increase in case of croplands. While on the other hand, we see similar pattern of increase in case of SSP5 but at a comparatively gradual and less aggressive rate.
 
 ### Component 2: 
 
@@ -107,11 +108,11 @@ Run the "Nutrient Delivery ratio" Invest model. Detailed information about the i
 The inputs used to run this model are:
 - Digital elevation model - which I extracted from [ASTER](https://asterweb.jpl.nasa.gov/gdem.asp).
 - LULC maps - which we have derived above from SEALS.
-- Nutrient Runoff proxy - where we can use annual precipitaion data.
-- Watersheds - extract watershed map for youe respective area of interest.
+- Nutrient Runoff proxy - where we can use annual precipitaion data as proxy.
+- Watersheds - extract watershed map for your respective area of interest.
 - Biophysical table
 
-A thing to note here is to be careful for aligning each of these inputs in same projection. In my case, I re-projected each of them into World_Robinson before feeding them to InVest.
+A thing to note here is to be careful for aligning each of these inputs in same projection. In my case, I re-projected each of them into World_Robinson before feeding them to InVest. 
 
 The ouputs generated from this model are:
  - watershed_results_ndr - vector containing aggregrated nutrient model results per wateshed
@@ -166,12 +167,12 @@ The outputs from my run have been attached below for each year and SSPs.
 
 c)	Write a narrative description of how the different scenarios differ in terms of which ecosystem services see localized increases/decreases.
 
-It is a bit hard to identify localized chnages in ecosystem services but the outputs that we get from InVest have to align with the narrative that ours LULC models have painted above. For instance, in both SSP scenario we see future decrease in forest area which is what we see in case of total carbon storage ouputs. Since we see an expansion of croplands, following that we see gradual increase in pollinatiators abundance throughout the years in case of both SSP scenarios. Similar, identification can be done for remaining ecosystem services. Such descriptions, are crucial in understanding the trade-offs and synergies between different ecosystem services under different socio-economic scenarios.
+It is a bit hard to identify localized chnages in ecosystem services but the outputs that we get from InVest have to align with the narrative that ours LULC models have painted above. For instance, in both SSP scenario we see future decrease in forest area which is what we see in case of total carbon storage ouputs. Since we see an expansion of croplands, following that we see gradual increase in pollinatiators abundance throughout the years in case of both SSP scenarios. Similar identification can be done for remaining ecosystem services. These descriptions, are crucial in understanding the trade-offs and synergies between different ecosystem services under different socio-economic scenarios.
 
 
 d)	Write a 1 paragraph executive summary on your results from the perspective of what a policy maker interested in “green economic development” should know about their country’s ecosystem services.
 
-### This study assesses the land use changes and associated impacts on ecosystem services in Taiwan under different socio-economic scenarios. We exhibit the implications of two different SSPs and policy change on LULC and ecosystem services, all of which is replicable for future use.Our findings highlight the sensitivity of key ecosystem services, including carbon storage, water yield, pollination, sediment retention, and nutrient retention, to land use changes. Specifically, preserving natural habitats and limiting cropland expansion emerge as crucial strategies for maintaining and enhancing ecosystem services critical for green economic development. These results underscore the importance of aligning land use policies with sustainability objectives to ensure long-term environmental resilience and economic prosperity in Taiwan.
+### This study assesses the land use changes and associated impacts on ecosystem services in Taiwan under different socio-economic scenarios. We exhibit the implications of two different SSPs and policy change on LULC and ecosystem services, all of which is replicable for future use. Our findings highlight the sensitivity of key ecosystem services, including carbon storage, water yield, pollination, sediment retention, and nutrient retention, to land use changes based on different socio-economic and climate scenarios. Specifically, preserving natural habitats and limiting cropland expansion emerge as crucial strategies for maintaining and enhancing ecosystem services critical for green economic development. These results underscore the importance of aligning land use policies with sustainability objectives to ensure long-term environmental resilience and economic prosperity in Taiwan.
 
 
 ### Component 3:
