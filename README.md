@@ -87,15 +87,15 @@ The inputs used to run this model are:
 The ouputs generated from this model are:
 - Pollinator abundance for each species and season (Apis/Bombus for Spring/Summer)
 - Pollinator supply for each season (Spring/Summer)
-- Total pollinator abundance for each season (SPring/Summer)
+- Total pollinator abundance for each season (Spring/Summer)
   
 The outputs from my run have been attached below for each year and SSPs. 
 [Pollination outputs.pdf](https://github.com/prayash106/APEC_8601/files/15227690/Pollination.outputs.pdf)
 
-c.)	Write a narrative description of how the different scenarios differ in terms of which ecosystem services see localized increases/decreases.
+c)	Write a narrative description of how the different scenarios differ in terms of which ecosystem services see localized increases/decreases.
 
 
-d.)	Write a 1 paragraph executive summary on your results from the perspective of what a policy maker interested in “green economic development” should know about their country’s ecosystem services.
+d)	Write a 1 paragraph executive summary on your results from the perspective of what a policy maker interested in “green economic development” should know about their country’s ecosystem services.
 
 ### Component 3:
 a.)	Post and organize all of the code you have worked on this semester in a single repository. Make a readme.md (which is the default files that Github renders when you visit the repository) that highlights/summarizes/organizes what you’ve done. You’ll probably want to highlight the policy summary that you did above, but also include the other code you’ve developed.
