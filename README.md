@@ -77,8 +77,7 @@ The ouputs that we get are (for each LULC):
 The outputs from my run have been attached below for each year and SSPs. 
 [Carbon storage outputs.pdf](https://github.com/prayash106/APEC_8601/files/15227545/Carbon.storage.outputs.pdf)
 
-b.	Water Yield
-c.	Pollination
+b.	Pollination
 
 Run the "Crop Pollination" Invest model. Detailed information about the inputs and outputs can be found in the [user guide](http://releases.naturalcapitalproject.org/invest-userguide/latest/en/croppollination.html).
 
@@ -94,6 +93,55 @@ The ouputs generated from this model are:
   
 The outputs from my run have been attached below for each year and SSPs. 
 [Pollination outputs.pdf](https://github.com/prayash106/APEC_8601/files/15227690/Pollination.outputs.pdf)
+
+c. Water purification/ Nutrient Delivery ratio
+
+Run the "Nutrient Delivery ratio" Invest model. Detailed information about the inputs and outputs can be found in the [user guide](http://releases.naturalcapitalproject.org/invest-userguide/latest/ndr.html).
+
+The inputs used to run this model are:
+- Digital elevation model - which I extracted from [ASTER](https://asterweb.jpl.nasa.gov/gdem.asp).
+- LULC maps - which we have derived above from SEALS.
+- Nutrient Runoff proxy - where we can use annual precipitaion data.
+- Watersheds - extract watershed map for youe respective area of interest.
+- Biophysical table
+
+A thing to note here is ti be careful for aligning each of these inputs in same projection. In my case, I re-projected each of them into World_Robinson before feeding them to InVest.
+
+The ouputs generated from this model are:
+ - watershed_results_ndr - vector containing aggregrated nutrient model results per wateshed
+ - p_surface_export
+ - n_surface_export
+ - n_subsurface_export
+ - n_total_export
+
+The outputs from my run have been attached below for each year and SSPs. The attached file contains only watershed_results_ndr but othe results can be provided if needed.
+[Water purification:NDR.pdf](https://github.com/prayash106/APEC_8601/files/15240361/Water.purification.NDR.pdf)
+
+d. Water Yield
+
+Run the "Annual Water Yield" Invest model. Detailed information about the inputs and outputs can be found in the [user guide] (http://releases.naturalcapitalproject.org/invest-userguide/latest/reservoirhydropowerproduction.html). 
+
+The inputs used to run this model are:
+- Precipitation - use the same annual precipitation file from NDR.
+- Evapotranspiration
+- Root restricting layer depth
+- Plant Available Water content
+- LULC
+- Biophysical table
+- Watersheds
+
+e. Sediment retention
+
+Run the "Sediment Delivery Ratio" Invest model. Detailed information about the inputs and outputs can be found in the [user guide] (http://releases.naturalcapitalproject.org/invest-userguide/latest/sdr.html).
+
+The inputs used to run this model are:
+- Digital elevation model
+- LULC
+- Biophysical table
+- Watersheds
+- Erosivity
+- Soil erodibility
+
 
 c)	Write a narrative description of how the different scenarios differ in terms of which ecosystem services see localized increases/decreases.
 
