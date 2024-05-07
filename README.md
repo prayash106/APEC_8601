@@ -120,7 +120,6 @@ The outputs from my run have been attached below for each year and SSPs. The att
 d. Water Yield
 
 Run the "Annual Water Yield" Invest model. Detailed information about the inputs and outputs can be found in the [user guide] (http://releases.naturalcapitalproject.org/invest-userguide/latest/reservoirhydropowerproduction.html). 
-
 The inputs used to run this model are:
 - Precipitation - use the same annual precipitation file from NDR.
 - Evapotranspiration
@@ -132,8 +131,7 @@ The inputs used to run this model are:
 
 e. Sediment retention
 
-Run the "Sediment Delivery Ratio" Invest model. Detailed information about the inputs and outputs can be found in the [user guide] (http://releases.naturalcapitalproject.org/invest-userguide/latest/sdr.html).
-
+Run the "Sediment Delivery Ratio" Invest model. Detailed information about the inputs and outputs can be found in the [user guide] (http://releases.naturalcapitalproject.org/invest-userguide/latest/en/sdr.html).
 The inputs used to run this model are:
 - Digital elevation model
 - LULC
