@@ -10,7 +10,7 @@ Country of choice: Taiwan (ISO code: TWN) - choose a small country to make analy
 SSPs choice: The SSPs are framework that are used to develop new socio-economic scenarios to be used in global climate change studies. Basically, there are five different SSPs (1-5) which narrate different socio-economic challenges to mitigation and adoption. For further reading, please refer [Popp et al. (2016)](https://www.sciencedirect.com/science/article/pii/S0959378016303399).
 For this analysis, I have choosen SSP1 and SSP5 -  where SSP1 describes a future pathway with comparatively low challenges for adaptation and mitigation but SSP5, on the other hand, represents high challenges to mitigation combined with low challenges to adaptation. Basically, under SPP1 we will be seeing strong regulation to avaoid environmental tradeoffs and in case of SSP5 we will see medium regulations. 
 
-Steps to make these changes on the pre-installed earth economy devstack workspace (to learn more about these workspace visit [Justin Polasky lab](https://johnsonpolaskylab.umn.edu)) or [earth_economy_devstack](https://github.com/jandrewjohnson?tab=repositories).
+Steps to make these changes on the pre-installed earth economy devstack workspace (to learn more about these workspace visit [Justin Polasky lab](https://johnsonpolaskylab.umn.edu))
 - Navigate to scenario_definations.csv files and change the respective labels based on your choice of country and SSP. AOI was chnaged to "TWN". Years was changed to 2030/35/40. Coarse projections input for respective SSP/RCP definations were downloaded from "Land Use Harmonization data" and defined in correct path.
   
 b)	Plot these maps using QGIS or whatever plotting method you like.  
