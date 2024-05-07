@@ -35,7 +35,7 @@ My output are depicted below starting from the baseline (BAU) scenarion then und
 
 c.)	Add a new “policy” layer that prevents/encourages certain types of land-use change in certain areas. For instance, you could modify the calibration parameters file to decrease the likelihood that agricultural expansion happens on steep slopes.
 
-This step is also fairly simple as all it involves is redefining the scenarios just like we did above. In this case, we navigate to defualt inputs under seals of our base data. There we alter the policy we like by changing the inputs in the defualt_global_coefficients_csv. In this example, I try a new policy in Taiwan where we do not allow changes in cropland. These can be done by changing the calibration parameters to 0.
+This step is also fairly simple as all it involves is redefining the scenarios just like we did above. In this case, we navigate to defualt_inputs_.csv under seals of our base data. There we alter the policy under consideration by changing the inputs in the defualt_global_coefficients_csv. In this example, I try a new policy in Taiwan where we do not allow changes in cropland. These can be done by changing the calibration parameters to 0.
 
 The LULC ouput that we get from this are depicted below - just like above starting from BAU model to different SSP scenarions for all years:
 
