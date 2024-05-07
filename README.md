@@ -4,7 +4,7 @@ In this project, you will pick a country. You may want to pick a relatively smal
 ### Component 1: 
 
 a)	Use SEALS to generate LULC maps for your country for 2030, 2035 and 2040. Do this for at least two different SSPs. 
-### Country of choice: Taiwan (ISO code: TWN) - choose a small country to make analysis faster
+### Country of choice: Taiwan (ISO code: TWN) - choose a small country to make analysis faster.
 ### SSPs choice: The SSPs are framework that are used to develop new socio-economic scenarios to be sued in global climate change studies. Basically, there are five different SSPs (1-5) which narrate different socio-economic challenges to mitigation and adoption. For further reading, please refer [Popp et al. (2016)](https://www.sciencedirect.com/science/article/pii/S0959378016303399).
 For this analysis, I have choosen SSP1 and SSP5 -  where SSP1 describes a future pathway with comparatively low challenges for adaptation and mitigation but SSP5, on the other hand, represents high challenges to mitigation combined with low challenges to adaptation. Basically, under SPP1 we will be seeing strong regulation to avaoid environmental tradeoffs and in case of SSP5 we will see medium regulations. 
 
@@ -58,11 +58,40 @@ a)	Use the maps you generated to assess run ecosystem service assessments for ea
 
 a.	Carbon Storage
 
-Run the "Carbon Storage and Sequestration" model
+Run the "Carbon Storage and Sequestration" InVest model. Detailed information about the inputs and outputs can be found in the [user guide](http://releases.naturalcapitalproject.org/invest-userguide/latest/en/carbonstorage.html).
+
+The inputs used to run the model are:
+- LULC maps - which we have derived above from SEALS.
+- Carbon pools - which can be generated for choosen country.
+
+The ouputs that we get are (for each LULC):
+- Total carbon storage: Rasters showing the amount of carbon stored in each pixel
+- Carbon stored above: Raster of aboveground carbon values.
+- Carbon stored below: Raster of belowground carbon values.
+- Carbon in soil: Raster of soil carbon values.
+- Carbon dead : Raster of dead carbon values
+
+The outputs from my run have been attached below for each year and SSPs. 
 [Carbon storage outputs.pdf](https://github.com/prayash106/APEC_8601/files/15227545/Carbon.storage.outputs.pdf)
 
 b.	Water Yield
 c.	Pollination
+
+Run the "Crop Pollination" Invest model. Detailed information about the inputs and outputs can be found in the [user guide](http://releases.naturalcapitalproject.org/invest-userguide/latest/en/croppollination.html).
+
+The inputs used to run this model are:
+- LULC maps - which we have derived above from SEALS.
+- Biophysical table
+- Guild table
+
+The ouputs generated from this model are:
+- Pollinator abundance for each species and season (Apis/Bombus for Spring/Summer)
+- Pollinator supply for each season (Spring/Summer)
+- Total pollinator abundance for each season (SPring/Summer)
+  
+The outputs from my run have been attached below for each year and SSPs. 
+[Pollination outputs.pdf](https://github.com/prayash106/APEC_8601/files/15227690/Pollination.outputs.pdf)
+
 d.	Sediment retention
 e.	Nutrient retention
 
