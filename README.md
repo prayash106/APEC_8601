@@ -55,6 +55,8 @@ The LULC ouput that we get from this are depicted below - just like above starti
 
 d)	Write a narrative description of how the different scenarios differ in terms of what classes expand/contract and where.
 
+Crafting a narrative description of how the scenarios differ in terms of land use changes is essential. Highlighting which classes expand or contract and where these changes occur will provide valuable insights into the potential impacts of different policy decisions and socio-economic pathways on land use patterns.
+
 Adhering to our policy definition, we see no expansion into croplands after implementing the policy change. For both cases of SSP and all years our original cropland area remains unchanged which is to be expected based on how we defined our policy intervention. Comparing between SSP1 and SSP5, we do see some changes in other classes as compared to business-as-usual scenario. In case of SSP1, we see rapid expansion of croplands, other natural lands, and urban areas into forest areas – with majority of increase in case of croplands. While on the other hand, we see similar pattern of increase in case of SSP5 but at a comparatively gradual and less aggressive rate.
 
 ### Component 2: 
@@ -164,13 +166,17 @@ The outputs from my run have been attached below for each year and SSPs.
 
 c)	Write a narrative description of how the different scenarios differ in terms of which ecosystem services see localized increases/decreases.
 
+It is a bit hard to identify localized chnages in ecosystem services but the outputs that we get from InVest have to align with the narrative that ours LULC models have painted above. For instance, in both SSP scenario we see future decrease in forest area which is what we see in case of total carbon storage ouputs. Since we see an expansion of croplands, following that we see gradual increase in pollinatiators abundance throughout the years in case of both SSP scenarios. Similar, identification can be done for remaining ecosystem services. Such descriptions, are crucial in understanding the trade-offs and synergies between different ecosystem services under different socio-economic scenarios.
+
 
 d)	Write a 1 paragraph executive summary on your results from the perspective of what a policy maker interested in “green economic development” should know about their country’s ecosystem services.
+
+### This study assesses the land use changes and associated impacts on ecosystem services in Taiwan under different socio-economic scenarios. We exhibit the implications of two different SSPs and policy change on LULC and ecosystem services, all of which is replicable for future use.Our findings highlight the sensitivity of key ecosystem services, including carbon storage, water yield, pollination, sediment retention, and nutrient retention, to land use changes. Specifically, preserving natural habitats and limiting cropland expansion emerge as crucial strategies for maintaining and enhancing ecosystem services critical for green economic development. These results underscore the importance of aligning land use policies with sustainability objectives to ensure long-term environmental resilience and economic prosperity in Taiwan.
+
 
 ### Component 3:
 a.)	Post and organize all of the code you have worked on this semester in a single repository. Make a readme.md (which is the default files that Github renders when you visit the repository) that highlights/summarizes/organizes what you’ve done. You’ll probably want to highlight the policy summary that you did above, but also include the other code you’ve developed.
 
-b.)	Either make the repository public (recommended to start building your portfolio for later job searching success) or invite me to it. Submit the link to your repo on Canvas.
 
 
 
