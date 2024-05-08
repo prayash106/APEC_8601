@@ -182,9 +182,9 @@ The assignments submitted in this semester have been uploaded here. A basic desc
 
 Problem set 1: This assignment consist of probelms and solutions to some optimal control theory chapter of Conard and Clark.
 
-Problem set 2: Thsi assignment consist of hands on work with two sustainability models. First, we use DICE model to see chnages in total damages when input damage function coefficients are altered. Secondly, we rum MAGICC model for 4 main RCPs and plot temperature pathways for each of them.
+Problem set 2: This assignment consist of hands on work with two sustainability models. First, we use DICE model to see chnages in total damages when input damage function coefficients are altered. Secondly, we rum MAGICC model for 4 main RCPs and plot temperature pathways for each of them.
 
-Problem set 4: Thso assignment consist of a short demonstration of InVest Cooling model using base data.
+Problem set 4: This assignment consist of a short demonstration of InVest Cooling model using base data.
 
 All of this repository has been made public and can be found [here](https://github.com/prayash106/APEC_8601/tree/main).
 
