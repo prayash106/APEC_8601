@@ -12,7 +12,7 @@ For this analysis, I have choosen SSP1 and SSP5 -  where SSP1 describes a future
 
 Steps to make these changes on the pre-installed earth economy devstack workspace (to learn more about these workspace visit [Justin Polasky lab](https://johnsonpolaskylab.umn.edu))
 - Navigate to scenario_definations.csv files and change the respective labels based on your choice of country and SSP. AOI was chnaged to "TWN". Years was changed to 2030/35/40. Coarse projections input for respective SSP/RCP definations were downloaded from "Land Use Harmonization data" and defined in correct path.
-- Run the test_standard.py python file in debug mode.
+- Run the test_standard.py file in debug mode.
   
 b)	Plot these maps using QGIS or whatever plotting method you like.  
 
@@ -36,7 +36,7 @@ My output are depicted below starting from the baseline (BAU) scenario then unde
 
 c.)	Add a new “policy” layer that prevents/encourages certain types of land-use change in certain areas. For instance, you could modify the calibration parameters file to decrease the likelihood that agricultural expansion happens on steep slopes.
 
-Just like above, now we redefine the global coefficients based on what policy we choose and then run the model. We navigate to "defualt_inputs_csv" under SEALS of our base data. There we alter the policy under consideration by changing the inputs in the "defualt_global_coefficients_csv". In this example, I try a new policy in Taiwan where we do not allow changes in cropland by changing the calibration parameters to 0.
+Just like above, now we redefine the global coefficients based on what policy we choose and then run the model. We navigate to defualt_inputs.csv under SEALS of our base data. There we alter the policy under consideration by changing the inputs in the defualt_global_coefficients.csv. In this example, I try a new policy in Taiwan where we do not allow changes in cropland by changing the calibration parameters to 0.
 
 The LULC ouput that we get from this are depicted below - just like above starting from BAU model to different SSP scenarions for all years:
 
