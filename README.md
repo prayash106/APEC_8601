@@ -1,5 +1,6 @@
-## APEC_8601
-## Final Project
+## APEC_8601/Final Project
+## Earth Economy Modelling - TAIWAN
+
 In this project, you will pick a country. You may want to pick a relatively small country to speed up computation time, but that’s up to you.  
 ### Component 1: 
 
