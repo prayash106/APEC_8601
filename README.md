@@ -68,7 +68,7 @@ a.	Carbon Storage
 
 Run the "Carbon Storage and Sequestration" InVest model. Detailed information about the inputs and outputs can be found in the [user guide](http://releases.naturalcapitalproject.org/invest-userguide/latest/en/carbonstorage.html).
 
-The inputs used to run the model are:
+The inputs used to run the model are: (note: all of these inputs have been uploaded above)
 - LULC maps - which we have derived above from SEALS.
 - Carbon pools - which can be generated for choosen country.
 
@@ -87,7 +87,7 @@ b.	Pollination
 
 Run the "Crop Pollination" Invest model. Detailed information about the inputs and outputs can be found in the [user guide](http://releases.naturalcapitalproject.org/invest-userguide/latest/en/croppollination.html).
 
-The inputs used to run this model are:
+The inputs used to run this model are:(note: all of these inputs have been uploaded above)
 - LULC maps - which we have derived above from SEALS.
 - Biophysical table
 - Guild table
@@ -105,7 +105,7 @@ c. Water purification/ Nutrient Delivery ratio
 
 Run the "Nutrient Delivery ratio" Invest model. Detailed information about the inputs and outputs can be found in the [user guide](http://releases.naturalcapitalproject.org/invest-userguide/latest/ndr.html).
 
-The inputs used to run this model are:
+The inputs used to run this model are: (note: all of these inputs have been uploaded above)
 - Digital elevation model - which I extracted from [ASTER](https://asterweb.jpl.nasa.gov/gdem.asp).
 - LULC maps - which we have derived above from SEALS.
 - Nutrient Runoff proxy - where we can use annual precipitaion data as proxy.
@@ -129,7 +129,7 @@ d. Water Yield
 
 Run the "Annual Water Yield" Invest model. Detailed information about the inputs and outputs can be found in the [user guide](http://releases.naturalcapitalproject.org/invest-userguide/latest/reservoirhydropowerproduction.html). 
 
-The inputs used to run this model are:
+The inputs used to run this model are: (note: all of these inputs have been uploaded above)
 - Precipitation - use the same annual precipitation file from NDR.
 - Evapotranspiration
 - Root restricting layer depth
@@ -142,7 +142,7 @@ e. Sediment retention
 
 Run the "Sediment Delivery Ratio" Invest model. Detailed information about the inputs and outputs can be found in the [user guide](http://releases.naturalcapitalproject.org/invest-userguide/latest/en/sdr.html).
 
-The inputs used to run this model are:
+The inputs used to run this model are: (note: all of these inputs have been uploaded above)
 - Digital elevation model - which I extracted from [ASTER](https://asterweb.jpl.nasa.gov/gdem.asp).
 - LULC - which we have derived from SEALS.
 - Biophysical table
